@@ -1,0 +1,129 @@
+.overlayShow,
+.overlayHidden {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 90;
+  background-color: rgba(43, 45, 49, 0.479);
+  backdrop-filter: blur(3px);
+  transition: all 0.5s;
+}
+.overlayShow {
+  opacity: 1;
+}
+.overlayHidden {
+  opacity: 0;
+  z-index: -10;
+}
+.modalShow,
+.modalHidden {
+  position: fixed;
+  z-index: 100;
+  height: auto;
+  max-height: 90vh;
+  width: 80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(43, 45, 49);
+  border-radius: 2rem;
+  transition: all 0.5s;
+  color: #fff;
+  justify-content: center;
+  overflow: auto;
+}
+.modalShow {
+  opacity: 1;
+  -webkit-box-shadow: 8px 8px 12px 3px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 8px 8px 12px 3px rgba(0, 0, 0, 0.24);
+  box-shadow: 8px 8px 12px 3px rgba(0, 0, 0, 0.24);
+}
+.modalHidden {
+  opacity: 0;
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  box-shadow: 0;
+}
+
+.closeBtn {
+  position: fixed;
+  z-index: 1000;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.closeBtn:hover {
+  transform: rotate(90deg);
+}
+
+.modalContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.modalLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modalRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.modalDescription {
+  position: relative;
+  z-index: 150;
+  line-height: 1.8rem;
+  padding: 5rem;
+  margin-top: 1rem;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.modalTitle {
+  position: relative;
+  z-index: 150;
+  padding: 1rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.modalTitle p {
+  font-size: 2rem;
+}
+
+.modalContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 50%;
+}
+.modalGenres {
+  display: flex;
+}
+.modalGenre {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.modalRatings h3 {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+.modalChart {
+  height: 50%;
+}

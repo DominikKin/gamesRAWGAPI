@@ -1,0 +1,98 @@
+button {
+  border-radius: 1rem;
+  border: 1px solid rgb(196, 196, 196);
+  outline: none;
+  background: transparent;
+  color: rgb(196, 196, 196);
+  padding: 0.3rem 0.5rem;
+  margin: 0.2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+}
+
+.genre:hover,
+.genreSelected {
+  background-color: rgb(25, 55, 119);
+  color: rgb(255, 255, 255);
+}
+
+.genre:active {
+  background-color: rgb(35, 93, 216);
+  color: rgb(255, 255, 255);
+}
+.platform:hover,
+.platformSelected {
+  background-color: rgb(180, 65, 12);
+  color: rgb(255, 255, 255);
+}
+
+.platform:active {
+  background-color: rgb(252, 95, 23);
+  color: rgb(255, 255, 255);
+}
+
+.newOld,
+.newOldSelected {
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.newOld:hover,
+.newOldSelected {
+  background-color: rgb(174, 12, 180);
+  color: rgb(255, 255, 255);
+}
+
+.newOld:active {
+  background-color: rgb(234, 14, 241);
+  color: rgb(255, 255, 255);
+}
+
+.aws,
+.awsSelected,
+.grt,
+.grtSelected,
+.good,
+.goodSelected,
+.meh,
+.mehSelected,
+.rub,
+.rubSelected {
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+.aws:hover,
+.awsSelected {
+  background-color: #00ff9d;
+  color: rgb(255, 255, 255);
+}
+.grt:hover,
+.grtSelected {
+  background-color: #00ff22;
+  color: rgb(255, 255, 255);
+}
+.good:hover,
+.goodSelected {
+  background-color: #bbff00;
+  color: rgb(255, 255, 255);
+}
+.meh:hover,
+.mehSelected {
+  background-color: #ffbb00;
+  color: rgb(255, 255, 255);
+}
+.rub:hover,
+.rubSelected {
+  background-color: #ff2600;
+  color: rgb(255, 255, 255);
+}

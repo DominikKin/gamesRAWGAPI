@@ -1,0 +1,11 @@
+.qualityContainer {
+  align-items: center;
+}
+.qualityTitle {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}

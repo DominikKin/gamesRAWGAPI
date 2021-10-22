@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800;900&display=swap");
+
+.App {
+  font-family: Lato, sans-serif;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto;
+  background-color: rgb(43, 45, 49);
+  overflow: hidden;
+}

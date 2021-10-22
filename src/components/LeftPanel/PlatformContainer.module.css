@@ -1,0 +1,35 @@
+.platformContainer {
+  display: block;
+  padding: 0.5rem;
+}
+.platformTitle {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.platformTitle:hover {
+  color: rgb(180, 65, 12);
+}
+.platformTitle:active {
+  color: rgb(252, 95, 23);
+}
+
+.toggleBtnsContainer {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.platformBtnContainer {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+.platformBtnContainerExpanded {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}

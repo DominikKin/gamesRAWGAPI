@@ -1,0 +1,27 @@
+.genreContainer {
+  display: block;
+  padding: 0.5rem;
+}
+.genreTitle {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.genreTitle:hover {
+  color: rgb(35, 93, 216);
+}
+.genreTitle:active {
+  color: rgb(118, 162, 255);
+}
+.genreBtnContainer {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+.genreBtnContainerExpanded {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}

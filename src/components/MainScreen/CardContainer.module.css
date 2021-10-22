@@ -1,0 +1,30 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+  margin-top: 0;
+  padding: 2rem;
+  width: 90%;
+  background-color: transparent;
+  overflow-y: auto;
+  height: 70vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none;
+}
+.goBack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.goBack h2 {
+  font-size: 5rem;
+}
+.goBack p {
+  font-size: 2rem;
+}
